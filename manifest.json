@@ -1,0 +1,14 @@
+ {
+  "manifest_version": 3,
+  "name": "Screen Saver",
+  "version": "1.0",
+  "description": "A simple screen saver",
+"action": {
+    "default_icon": "icons/icon512.png"
+  },
+  "icons": {
+    "48": "icons/icon48.png",
+    "72": "icons/icon72.png",
+    "128": "icons/icon128.png"
+  }
+}

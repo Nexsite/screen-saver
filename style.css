@@ -1,86 +1,77 @@
 
 * {
-    user-select: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
 }
 body {
-    
+  color: #333333;
+  transition: background-color 0.2s, color 0.2s;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer; 
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 19px;
+    background-color: transparent;
+}
+section {
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #282c34;
-    color: white;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
 }
-.clock {
-    font-size: 8rem;
-    border-radius: 30px;
-    font-family: "Poppins", serif;
-    font-weight: 900;
-    font-style: normal;
+
+/* Dark Theme */
+body.dark {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+body.dark select {
+    color: #ffffff;
+}
+body.dark #option {
+    background-color: #252526;
+    color: #fff;
+    border: none;
+}
+
+
+.left {
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 10px;
+  float: left;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+
+#clock {
+    font-size: 7.375rem;
+    font-weight: 800;
+}
+
+
+/* Mobile styles (for screens smaller than 768px) */
+@media (max-width: 768px) {
+    #clock {
+        font-size: 55px;
+    }
+  }
   
-}
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: #3586ff;
-    overflow: hidden;
-  }
-  section .air{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
-    background-size: 1000px 100px
-  }
-  section .air.air1{
-    animation: wave 30s linear infinite;
-    z-index: 1000;
-    opacity: 1;
-    animation-delay: 0s;
-    bottom: 0;
-  }
-  section .air.air2{
-    animation: wave2 15s linear infinite;
-    z-index: 999;
-    opacity: 0.5;
-    animation-delay: -5s;
-    bottom: 10px;
-  }
-  section .air.air3{
-    animation: wave 30s linear infinite;
-    z-index: 998;
-    opacity: 0.2;
-    animation-delay: -2s;
-    bottom: 15px;
-  }
-  section .air.air4{
-    animation: wave2 5s linear infinite;
-    z-index: 997;
-    opacity: 0.7;
-    animation-delay: -5s;
-    bottom: 20px;
-  }
-  @keyframes wave{
-    0%{
-      background-position-x: 0px; 
-    }
-    100%{
-      background-position-x: 1000px; 
+  /* Extra-small devices (portrait phones, less than 480px) */
+  @media (max-width: 480px) {
+    #clock {
+        font-size: 35px;
     }
   }
-  @keyframes wave2{
-    0%{
-      background-position-x: 0px; 
-    }
-    100%{
-      background-position-x: -1000px; 
-    }
-  }
+  

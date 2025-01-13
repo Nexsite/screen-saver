@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="apple-touch-icon" href="assets/icons/icon.png">
+    <meta name="apple-mobile-web-app-title" content="Screen Saver">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="shortcut icon" href="src/favicon.svg" type="image/x-icon">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/icons/icon72.png" type="image/x-icon">
+    <meta name="description" content="this is a simple screen saver made from html, css and js">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="keywords" content="screen saver, new project, web development">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="author" content="Novalexdroid">
+    <meta name="theme-color" content="#ff5733">
     <title>Screen Saver</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="fonts/fonts.css" type="text/css">
+  <!-- <link rel="stylesheet" href="new.css"> -->
 </head>
 <body>
+    <nav>
+        <select id="theme-selector" class="left">
+            <option id="option" value="light">Light</option>
+            <option id="option" value="dark">Dark</option>
+        </select>
+    </nav>
+
+
     <section>
         <div class="clock" id="clock"></div>
-        <div class='air air1'></div>
-        <div class='air air2'></div>
-        <div class='air air3'></div>
-        <div class='air air4'></div>
       </section>
-    <script src="main.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
